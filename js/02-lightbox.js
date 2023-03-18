@@ -32,10 +32,10 @@ galleryEl.insertAdjacentHTML("beforeend", galleryItemsToString)
 let gallery = new SimpleLightbox('.gallery a', {captionsData: "alt",  captionPosition:"bottom", captionDelay: 250,  scrollZoom: false});
 
 gallery.on('shown.simplelightbox', function (event) {
-//    event.preventDefault(),
+  event.preventDefault();
   console.log("Everything works fine")
 });
 
-gallery.on('error.simplelightbox', function (e) {
-	console.log(e, "Something wrong"); 
+gallery.on('error.simplelightbox', function (event) {
+	console.log(event, "Something wrong"); 
 });
