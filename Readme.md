@@ -1,1 +1,3 @@
 
+Image gallery
+SimpleLightbox library
